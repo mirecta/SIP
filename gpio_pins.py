@@ -12,6 +12,7 @@ from pyA20.gpio import port
 
 pins = [port.PA10, port.PA13, port.PA2, port.PA14]
 gpio.init()
+gv.platform = u"pi"
 
 for pin in pins:
     gpio.setcfg(pin, gpio.OUTPUT)
